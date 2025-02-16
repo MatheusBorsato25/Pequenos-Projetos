@@ -1,3 +1,6 @@
+# Projeto - TAD Equipe
+# Autor: Matheus Henrique Borsato
+
 from dataclasses import dataclass
 from enum import Enum
 
@@ -450,7 +453,7 @@ class Equipe:
         Se *operacao* == 1 -> Aumenta em 1 o número de jogadores de *posicao*.
         Se *operacao* == -1 -> Diminui em 1 o número de jogadores de *posicao*.
         '''
-        assert operacao == 1 or operacao == - 1
+        assert operacao == 1 or operacao == -1
         indice = posicao_value - 1  
         self.posicoes_jogadores[indice] += operacao 
  
